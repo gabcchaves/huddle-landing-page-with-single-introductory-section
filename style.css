@@ -45,7 +45,7 @@ button {
 	color: var(--violet);
 	border: none;
 	border-radius: 30px;
-	box-shadow: 0 20px 10px -10px darkslategray;
+	box-shadow: 0 15px 10px -10px darkslategray;
 }
 
 /* Medium and large viewport settings */
