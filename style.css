@@ -46,6 +46,25 @@ button {
 	border: none;
 	border-radius: 30px;
 	box-shadow: 0 15px 10px -10px darkslategray;
+	text-align: center;
+	transition: 0.2s;
+}
+
+button:hover {
+	background-color: var(--soft-magenta);
+	color: white;
+}
+
+footer i {
+	color: lightgray;
+	border-radius: 50%;
+	border: 1px solid lightgray;
+	transition: 0.2s;
+}
+
+footer i:hover {
+	color: var(--soft-magenta);
+	border-color: var(--soft-magenta);
 }
 
 /* Medium and large viewport settings */
@@ -98,13 +117,6 @@ button {
 	main button {
 		width: 35%;
 		height: 12%;
-		text-align: center;
-		transition: 0.2s;
-	}
-
-	main button:hover {
-		background-color: var(--soft-magenta);
-		color: white;
 	}
 
 	footer {
@@ -131,5 +143,64 @@ button {
 	footer i:hover {
 		color: var(--soft-magenta);
 		border-color: var(--soft-magenta);
+	}
+}
+
+/* Mobile settings */
+@media screen and (max-width: 1080px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		background-image: url("images/bg-mobile.svg");
+		background-color: var(--violet);
+		padding: 10%;
+	}
+
+	header {
+		height: 15%;
+		display: flex;
+		align-items: center;
+	}
+
+	header img {
+		width: 50%;
+	}
+
+	figure {
+		width: 100%;
+		margin-top: 15%;
+	}
+
+	main {
+		text-align: center;
+		margin-top:  20%;
+	}
+
+	main h1 {
+		font-size: 4vh;
+		margin-bottom: 5%;
+	}
+
+	main p {
+		font-size: 2.4vh;
+	}
+
+	main button {
+		width: 60%;
+		height: 15%;
+		margin: 5% 0;
+		font-size: 2.4vh;
+		box-shadow: 0 10px 10px -10px darkslategray;
+	}
+
+	footer {
+		margin-top: 10%;
+		color: lightgray;
+		text-align: center;
+	}
+
+	footer i {
+		font-size: 2.4vh;
+		padding: 2%;
 	}
 }
